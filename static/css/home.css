@@ -1,0 +1,112 @@
+html {
+  height: 100%;
+}
+
+#main-box {
+  background-color: #ffffff;
+  width: 375px;
+  border: 3px solid rgb(226, 227, 227);
+  display: flex;
+  flex-direction: column;
+}
+
+#main-box > div {
+    --margin: 6px;
+    margin: var(--margin) var(--margin) 0px var(--margin);
+}
+
+.captcha-header {
+  background-color: rgb(74, 144, 226);
+  height: 10rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.captcha-header div {
+  margin: 5px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.captcha-header-words {
+  font-size: 15px;
+}
+
+.select-all-word {
+  font-size: 30px;
+}
+
+#footer {
+  height: 80px;
+  background-color: white;
+  position: relative;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  pointer-events: visible;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0%;
+}
+
+.footer-message-no {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 0;
+  left: 0%;
+}
+
+.skip-button {
+  background: rgb(74, 144, 226);
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 32px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.skip-button:hover {
+  background: rgb(68, 132, 204);
+  color: #ffffff;
+}
+
+.skip-button:active {
+  position: relative;
+  top: 1px;
+}
+
+.fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.fill img {
+  flex-shrink: 0;
+  min-width: 100%;
+  pointer-events: none;
+}
